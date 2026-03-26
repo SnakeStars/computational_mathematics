@@ -26,7 +26,7 @@ plt.ion()
 fig, ax = plt.subplots()
 line, = ax.plot(x, u(x,1,Q,k,S,t0))
 ax.set_xlim(-10, 10)
-ax.set_ylim(-1, 2)
+ax.set_ylim(-1, 4)
 
 for time in range(1,tmax):
     u_cur = u(x, time, Q, k, S, t0)
