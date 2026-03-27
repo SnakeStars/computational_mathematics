@@ -17,7 +17,7 @@ l = 10
 x = np.linspace(0, l, n)
 h = x[1] - x[0]
 # t = h/(2*a)
-ts = [h/(2*a), h/(2.5*a), h/(3*a), h/(3.5*a)]
+ts = h/(2*a)
 T = 1
 # tmax = 1000
 
