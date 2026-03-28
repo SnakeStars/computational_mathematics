@@ -14,7 +14,7 @@ t = h/(2*a)
 tmax = 1000
 
 U = np.zeros((2,n))
-U[1] = np.sin(2*np.pi*x/l)
+U[1] = 5*np.sin(2*np.pi*x/l)
 
 # График
 
@@ -22,7 +22,7 @@ plt.ion()
 fig, ax = plt.subplots()
 line, = ax.plot(x, U[1])
 ax.set_xlim(0, l)
-ax.set_ylim(-1, 40)
+ax.set_ylim(-10, 10)
 
 for time in range(1, tmax):
     A = a*np.cos(w*time*t)
